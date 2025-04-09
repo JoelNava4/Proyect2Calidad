@@ -23,3 +23,14 @@ TEST(TriplaTest, PrimerElemListaTest) {
     t.pushLista(20);
     EXPECT_EQ(t.PrimerElemLista(), 10);
 }
+
+TEST(TriplaTest, EliminarUnElementoListaTest) {
+    Tripla<int> t;
+    t.pushLista(5);
+    t.pushLista(10);
+    t.pushLista(15);
+    t.EliminarUnElementoLista(10);
+    vector<int> lista = t.getLista();
+    EXPECT_EQ(lista.size(), 2);
+    EXPECT_TRUE(find(lista.begin(), lista.end(), 10) == lista.end());
+}
