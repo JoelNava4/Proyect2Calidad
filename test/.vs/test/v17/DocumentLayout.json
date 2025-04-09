@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Estructura de Datos\\ProyectoFinal\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|solutionrelative:test\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testTripla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|solutionrelative:test\\testTripla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +19,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "test.cpp",
-              "DocumentMoniker": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\test.cpp",
-              "RelativeDocumentMoniker": "test\\test.cpp",
-              "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\test.cpp",
-              "RelativeToolTip": "test\\test.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Title": "testTripla.cpp",
+              "DocumentMoniker": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testTripla.cpp",
+              "RelativeDocumentMoniker": "test\\testTripla.cpp",
+              "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testTripla.cpp",
+              "RelativeToolTip": "test\\testTripla.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-09T21:47:28.995Z",
               "EditorCaption": ""
