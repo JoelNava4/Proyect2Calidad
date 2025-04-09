@@ -34,3 +34,14 @@ TEST(TriplaTest, EliminarUnElementoListaTest) {
     EXPECT_EQ(lista.size(), 2);
     EXPECT_TRUE(find(lista.begin(), lista.end(), 10) == lista.end());
 }
+
+TEST(TriplaTest, SacarUnElemListaTest) {
+    Tripla<int> t;
+    t.pushLista(1);
+    t.pushLista(2);
+    t.pushLista(3);
+    int elem;
+    t.SacarUnElemLista(elem);
+    vector<int> lista = t.getLista();
+    EXPECT_TRUE(find(lista.begin(), lista.end(), elem) != lista.end());
+}
