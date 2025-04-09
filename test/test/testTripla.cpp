@@ -16,3 +16,10 @@ TEST(TriplaTest, PushGetLista) {
     EXPECT_EQ(lista[0], "Joel");
     EXPECT_EQ(lista[1], "Nava");
 }
+
+TEST(TriplaTest, PrimerElemListaTest) {
+    Tripla<int> t;
+    t.pushLista(10);
+    t.pushLista(20);
+    EXPECT_EQ(t.PrimerElemLista(), 10);
+}
