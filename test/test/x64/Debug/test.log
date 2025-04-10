@@ -1,10 +1,53 @@
-﻿  testLista8.cpp
+﻿  testGrafo.cpp
+D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(34,12): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "/testGrafo.cpp")
+  D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(34,12):
+  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+  	D:\Estructura de Datos\ProyectoFinal\test\test\testGrafo.cpp(5,28):
+  	Vea la referencia a la creación de una instancia de clase plantilla "Grafo<std::string>" que se está compilando
+  	D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(28,42):
+  	al compilar la función del miembro clase plantilla "int Grafo<std::string>::funcionHash(T)"
+          with
+          [
+              T=std::string
+          ]
+  		D:\Estructura de Datos\ProyectoFinal\test\test\testGrafo.cpp(12,11):
+  		vea la primera referencia a “Grafo<std::string>::funcionHash” en “GrafoTest_FuncionHashSimpleTest_Test::TestBody”
+  
+D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  (compilando archivo de origen "/testGrafo.cpp")
+  D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12):
+  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+  	D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(44,70):
+  	al compilar la función del miembro clase plantilla "void Grafo<std::string>::insertar(T,T,std::vector<std::string,std::allocator<std::string>> &)"
+          with
+          [
+              T=std::string
+          ]
+  		D:\Estructura de Datos\ProyectoFinal\test\test\testGrafo.cpp(20,15):
+  		vea la primera referencia a “Grafo<std::string>::insertar” en “GrafoTest_InsertarNuevoNodoTest_Test::TestBody”
+  	D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(94,1):
+  	al compilar la función del miembro clase plantilla "void Tripla<T>::SacarUnElemLista(T &)"
+          with
+          [
+              T=std::string
+          ]
+  		D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(75,24):
+  		vea la primera referencia a “Tripla<T>::SacarUnElemLista” en “Grafo<std::string>::SacarAdyacente”
+          with
+          [
+              T=std::string
+          ]
+  		D:\Estructura de Datos\ProyectoFinal\test\test\testGrafo.cpp(72,21):
+  		vea la primera referencia a “Grafo<std::string>::SacarAdyacente” en “GrafoTest_SacarAdyacenteTest_Test::TestBody”
+  
+  testLista8.cpp
   testTripla.cpp
 D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   (compilando archivo de origen "/testTripla.cpp")
   D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12):
   el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-  	D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(6,17):
+  	D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(7,17):
   	Vea la referencia a la creación de una instancia de clase plantilla "Tripla<int>" que se está compilando
   	D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(94,1):
   	al compilar la función del miembro clase plantilla "void Tripla<int>::SacarUnElemLista(T &)"
@@ -12,7 +55,7 @@ D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C424
           [
               T=int
           ]
-  		D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(45,23):
+  		D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(46,23):
   		vea la primera referencia a “Tripla<int>::SacarUnElemLista” en “TriplaTest_SacarUnElemListaTest_Test::TestBody”
   
   Generando código...

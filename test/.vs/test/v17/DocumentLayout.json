@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Estructura de Datos\\ProyectoFinal\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testLista8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|solutionrelative:test\\testLista8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testGrafo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|solutionrelative:test\\testGrafo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testTripla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|solutionrelative:test\\testTripla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testLista8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20C9E9EF-FEE2-4AE2-9843-899FE595CCB8}|test\\test.vcxproj|solutionrelative:test\\testLista8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "testGrafo.cpp",
+              "DocumentMoniker": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testGrafo.cpp",
+              "RelativeDocumentMoniker": "test\\testGrafo.cpp",
+              "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testGrafo.cpp",
+              "RelativeToolTip": "test\\testGrafo.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-14T18:34:25.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "testLista8.cpp",
               "DocumentMoniker": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testLista8.cpp",
               "RelativeDocumentMoniker": "test\\testLista8.cpp",
               "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testLista8.cpp",
               "RelativeToolTip": "test\\testLista8.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-14T18:25:31.69Z",
               "EditorCaption": ""
@@ -41,7 +58,7 @@
               "RelativeDocumentMoniker": "test\\testTripla.cpp",
               "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\test\\test\\testTripla.cpp",
               "RelativeToolTip": "test\\testTripla.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-09T21:47:28.995Z",
               "EditorCaption": ""

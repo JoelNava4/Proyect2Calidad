@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "../../ProyectoFinal/Tripla.h"
 
+using namespace std;
 
 TEST(TriplaTest, SetAndGetElem) {
     Tripla<int> t;
