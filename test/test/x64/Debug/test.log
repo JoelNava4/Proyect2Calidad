@@ -1,9 +1,10 @@
-﻿  testTripla.cpp
+﻿  testLista8.cpp
+  testTripla.cpp
 D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
   (compilando archivo de origen "/testTripla.cpp")
   D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12):
   el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-  	D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(5,17):
+  	D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(6,17):
   	Vea la referencia a la creación de una instancia de clase plantilla "Tripla<int>" que se está compilando
   	D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(94,1):
   	al compilar la función del miembro clase plantilla "void Tripla<int>::SacarUnElemLista(T &)"
@@ -11,7 +12,8 @@ D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C424
           [
               T=int
           ]
-  		D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(44,23):
+  		D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(45,23):
   		vea la primera referencia a “Tripla<int>::SacarUnElemLista” en “TriplaTest_SacarUnElemListaTest_Test::TestBody”
   
+  Generando código...
   test.vcxproj -> D:\Estructura de Datos\ProyectoFinal\test\x64\Debug\test.exe

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\Estructura de Datos\ProyectoFinal\test\x64\Debug\test.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TriplaTest.SetAndGetElem" Duration="1" />
+    <TestDuration Test="TriplaTest.PushGetLista" Duration="1" />
+    <TestDuration Test="TriplaTest.PrimerElemListaTest" Duration="1" />
+    <TestDuration Test="TriplaTest.EliminarUnElementoListaTest" Duration="1" />
+    <TestDuration Test="TriplaTest.SacarUnElemListaTest" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
