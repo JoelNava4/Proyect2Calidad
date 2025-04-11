@@ -109,3 +109,10 @@ TEST(GrafoTest, SacarAdyacenteSinAdyacentes) {
     g.SacarAdyacente("NodoSolo", adyacente);
     EXPECT_EQ(adyacente, "");
 }
+TEST(GrafoTest, MostrarGrafoVacio) {
+    Grafo<string> g;
+    testing::internal::CaptureStdout();
+    g.Mostrar();
+    string salida = testing::internal::GetCapturedStdout();
+    EXPECT_TRUE(salida.empty());
+}
