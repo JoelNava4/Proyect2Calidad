@@ -101,3 +101,11 @@ TEST(GrafoTest, InsertarNodoYaExistenteAgregaAdyacente) {
     EXPECT_EQ(lista[0], "Ciudad2");
     EXPECT_EQ(lista[1], "Ciudad3");
 }
+TEST(GrafoTest, SacarAdyacenteSinAdyacentes) {
+    Grafo<string> g;
+    vector<string> ciudades;
+    g.insertar("NodoSolo", "", ciudades); // adyacente vacío
+    string adyacente;
+    g.SacarAdyacente("NodoSolo", adyacente);
+    EXPECT_EQ(adyacente, "");
+}
