@@ -127,3 +127,12 @@ TEST(GrafoTest, MostrarGrafoParcialmenteLleno) {
     EXPECT_TRUE(salida.find("Uno") != string::npos);
     EXPECT_TRUE(salida.find("Tres") != string::npos);
 }
+TEST(GrafoTest, DestructorConNodos) {
+    Grafo<string>* g = new Grafo<string>();
+    vector<string> ciudades;
+    for (int i = 0; i < 5; ++i) {
+        g->insertar("Nodo" + to_string(i), "Ady" + to_string(i), ciudades);
+    }
+    delete g;
+    SUCCEED(); // Si llega aquí, el destructor no causó errores
+}
