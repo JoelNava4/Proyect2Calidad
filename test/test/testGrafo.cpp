@@ -116,3 +116,14 @@ TEST(GrafoTest, MostrarGrafoVacio) {
     string salida = testing::internal::GetCapturedStdout();
     EXPECT_TRUE(salida.empty());
 }
+TEST(GrafoTest, MostrarGrafoParcialmenteLleno) {
+    Grafo<string> g;
+    vector<string> ciudades;
+    g.insertar("Uno", "Dos", ciudades);
+    g.insertar("Tres", "Cuatro", ciudades);
+    testing::internal::CaptureStdout();
+    g.Mostrar();
+    string salida = testing::internal::GetCapturedStdout();
+    EXPECT_TRUE(salida.find("Uno") != string::npos);
+    EXPECT_TRUE(salida.find("Tres") != string::npos);
+}
