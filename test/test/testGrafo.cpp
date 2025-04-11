@@ -89,3 +89,15 @@ TEST(GrafoTest, FuncionHashCadenaVacia) {
     EXPECT_GE(h, 0);
     EXPECT_LT(h, 409);
 }
+TEST(GrafoTest, InsertarNodoYaExistenteAgregaAdyacente) {
+    Grafo<string> g;
+    vector<string> ciudades;
+    g.insertar("Ciudad1", "Ciudad2", ciudades); 
+    g.insertar("Ciudad1", "Ciudad3", ciudades); 
+    Tripla<string>* nodo = g.buscar("Ciudad1");
+    ASSERT_NE(nodo, nullptr);
+    vector<string> lista = nodo->getLista();
+    EXPECT_EQ(lista.size(), 2);
+    EXPECT_EQ(lista[0], "Ciudad2");
+    EXPECT_EQ(lista[1], "Ciudad3");
+}
