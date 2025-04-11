@@ -83,3 +83,9 @@ TEST(GrafoTest, MostrarTest) {
     string output = testing::internal::GetCapturedStdout();
     EXPECT_TRUE(output.find("A") != string::npos || output.find("C") != string::npos);
 }
+TEST(GrafoTest, FuncionHashCadenaVacia) {
+    Grafo<string> g;
+    int h = g.funcionHash("");
+    EXPECT_GE(h, 0);
+    EXPECT_LT(h, 409);
+}
