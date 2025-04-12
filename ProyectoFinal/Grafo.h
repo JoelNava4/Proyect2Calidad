@@ -1,6 +1,8 @@
 #pragma once
 #include "Lista8.h"
 #define TAM 409
+#include <cmath>
+
 
 template<class T>
 class Grafo
