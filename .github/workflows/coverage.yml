@@ -1,0 +1,35 @@
+name: C++ Tests & Coverage
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install dependencies
+      run: sudo apt-get install lcov cmake g++ gcc libgtest-dev
+
+    - name: Configure CMake
+      run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage" -B build
+
+    - name: Build
+      run: cmake --build build
+
+    - name: Run Tests
+      run: cd build && ctest
+
+    - name: Generate coverage
+      run: |
+        lcov --directory build --capture --output-file coverage.info
+        lcov --remove coverage.info '/usr/*' '*/test/*' --output-file coverage.info
+        lcov --list coverage.info
+
+    - name: Upload to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: coverage.info
+        fail_ci_if_error: true
