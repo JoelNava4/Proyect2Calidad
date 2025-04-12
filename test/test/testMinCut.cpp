@@ -67,3 +67,11 @@ TEST(MinCutTest, SacarAletoriosConUnSoloNodo) {
     EXPECT_FALSE(V1.empty());
     EXPECT_FALSE(V2.empty());
 }
+TEST(MinCutTest, ContraerNodoConLoop) {
+    MinCut<string> minCut;
+    minCut.insertar("Loop", "Loop");
+    string V1, V2;
+    minCut.Contraer(V1, V2);
+    EXPECT_FALSE(V1.empty());
+    EXPECT_FALSE(V2.empty());
+}
