@@ -75,3 +75,8 @@ TEST(MinCutTest, ContraerNodoConLoop) {
     EXPECT_FALSE(V1.empty());
     EXPECT_FALSE(V2.empty());
 }
+TEST(MinCutTest, CorteMinimoGrafoVacio) {
+    MinCut<string> minCut;
+    int corte = minCut.CorteMinimo(); 
+    EXPECT_EQ(corte, 0); 
+}
