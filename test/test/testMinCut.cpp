@@ -86,3 +86,23 @@ TEST(MinCutTest, CorteMinimoConDosNodos) {
     int corte = minCut.CorteMinimo(); 
     EXPECT_GE(corte, 1);
 }
+TEST(MinCutTest, ContraerMultiplesVecesHastaDosNodos) {
+    MinCut<string> minCut;
+    minCut.insertar("A", "B");
+    minCut.insertar("B", "C");
+    minCut.insertar("C", "D");
+    minCut.insertar("D", "A");
+    minCut.insertar("A", "C");
+
+    while (true) {
+        try {
+            string V1, V2;
+            if (minCut.getCiudades().size() <= 2) break;
+            minCut.Contraer(V1, V2);
+        } catch (...) {
+            FAIL() << "Error en contracción múltiple";
+        }
+    }
+
+    SUCCEED();
+}

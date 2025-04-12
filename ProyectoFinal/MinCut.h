@@ -16,6 +16,9 @@ public:
 	void ReiniciarGrafoyLista();
 	void mostrarCiudades();
 	void mostrarGrafo();
+	const vector<T>& getCiudades() const {
+		return Ciudades;
+	}
 };
 
 template<class T>
