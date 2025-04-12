@@ -59,3 +59,11 @@ TEST(MinCutTest, MostrarGrafoTest) {
     minCut.insertar("A", "B");
     minCut.mostrarGrafo();
 }
+TEST(MinCutTest, SacarAletoriosConUnSoloNodo) {
+    MinCut<string> minCut;
+    minCut.insertar("X", "Y");
+    string V1, V2;
+    minCut.SacarAletorios(V1, V2);
+    EXPECT_FALSE(V1.empty());
+    EXPECT_FALSE(V2.empty());
+}
