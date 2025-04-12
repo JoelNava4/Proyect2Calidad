@@ -11,15 +11,27 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Install dependencies
-      run: sudo apt-get install lcov cmake g++ gcc libgtest-dev
+      run: sudo apt-get update && sudo apt-get install lcov cmake g++ gcc libgtest-dev
+
+    - name: Build Google Test
+      run: |
+        cd /usr/src/googletest
+        cmake -DCMAKE_CXX_FLAGS="--coverage" .
+        make
+        sudo cp -r googletest/include /usr/local/include
+        sudo cp -r googlemock/include /usr/local/include
+        sudo cp -r lib/*.a /usr/local/lib
 
     - name: Configure CMake
-      run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage" -B build
+      run: cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS="--coverage" -DCMAKE_EXE_LINKER_FLAGS="--coverage" -B build
 
     - name: Build
       run: cmake --build build
 
-    - name: Run Tests
+    - name: Zero coverage counters
+      run: lcov --directory build --zerocounters
+
+    - name: Run Unit Tests
       run: cd build && ctest
 
     - name: Generate coverage
