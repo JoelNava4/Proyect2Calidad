@@ -80,3 +80,9 @@ TEST(MinCutTest, CorteMinimoGrafoVacio) {
     int corte = minCut.CorteMinimo(); 
     EXPECT_EQ(corte, 0); 
 }
+TEST(MinCutTest, CorteMinimoConDosNodos) {
+    MinCut<string> minCut;
+    minCut.insertar("A", "B");
+    int corte = minCut.CorteMinimo(); 
+    EXPECT_GE(corte, 1);
+}
