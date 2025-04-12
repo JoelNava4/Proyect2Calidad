@@ -101,6 +101,7 @@
   <ItemGroup>
     <ClCompile Include="testGrafo.cpp" />
     <ClCompile Include="testLista8.cpp" />
+    <ClCompile Include="testMinCut.cpp" />
     <ClCompile Include="testTripla.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
