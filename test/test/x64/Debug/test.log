@@ -1,17 +1,100 @@
-﻿  testTripla.cpp
-D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  (compilando archivo de origen "/testTripla.cpp")
-  D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12):
-  el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-  	D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(7,17):
-  	Vea la referencia a la creación de una instancia de clase plantilla "Tripla<int>" que se está compilando
-  	D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(94,1):
-  	al compilar la función del miembro clase plantilla "void Tripla<int>::SacarUnElemLista(T &)"
+﻿  testMinCut.cpp
+D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(36,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  (compilando archivo de origen "/testMinCut.cpp")
+      D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(36,12):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(5,20):
+          Vea la referencia a la creación de una instancia de clase plantilla "MinCut<std::string>" que se está compilando
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(35,1):
+          al compilar la función del miembro clase plantilla "void MinCut<std::string>::SacarAletorios(T &,T &)"
           with
           [
-              T=int
+              T=std::string
           ]
-  		D:\Estructura de Datos\ProyectoFinal\test\test\testTripla.cpp(46,23):
-  		vea la primera referencia a “Tripla<int>::SacarUnElemLista” en “TriplaTest_SacarUnElemListaTest_Test::TestBody”
+              D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(15,26):
+              vea la primera referencia a “MinCut<std::string>::SacarAletorios” en “MinCutTest_SacarAletoriosTest_Test::TestBody”
+  
+D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(73,42): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "/testMinCut.cpp")
+      D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(73,42):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(66,1):
+          al compilar la función del miembro clase plantilla "int MinCut<std::string>::CorteMinimo(void)"
+              D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(39,15):
+              vea la primera referencia a “MinCut<std::string>::CorteMinimo” en “MinCutTest_CorteMinimoTest_Test::TestBody”
+  
+D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(36,12): warning C4244: '=': conversión de 'double' a 'int'; posible pérdida de datos
+  (compilando archivo de origen "/testMinCut.cpp")
+      D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(36,12):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(23,1):
+          al compilar la función del miembro clase plantilla "MinCut<std::string>::MinCut(void)"
+              D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(5,20):
+              vea la primera referencia a “MinCut<std::string>::MinCut” en “MinCutTest_InsertarTest_Test::TestBody”
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(24,26):
+          al compilar la función del miembro clase plantilla "Grafo<T>::Grafo(void)"
+          with
+          [
+              T=std::string
+          ]
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(30,42):
+          al compilar la función del miembro clase plantilla "int Grafo<T>::funcionHash(T)"
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(51,42):
+              vea la primera referencia a “Grafo<T>::funcionHash” en “Grafo<T>::insertar”
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(30,17):
+              vea la primera referencia a “Grafo<T>::insertar” en “MinCut<std::string>::insertar”
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(6,20):
+              vea la primera referencia a “MinCut<std::string>::insertar” en “MinCutTest_InsertarTest_Test::TestBody”
+  
+D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  (compilando archivo de origen "/testMinCut.cpp")
+      D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(95,12):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(46,70):
+          al compilar la función del miembro clase plantilla "void Grafo<T>::insertar(T,T,std::vector<std::string,std::allocator<std::string>> &)"
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(30,17):
+              vea la primera referencia a “Grafo<T>::insertar” en “MinCut<std::string>::insertar”
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(6,20):
+              vea la primera referencia a “MinCut<std::string>::insertar” en “MinCutTest_InsertarTest_Test::TestBody”
+          D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Tripla.h(94,1):
+          al compilar la función del miembro clase plantilla "void Tripla<T>::SacarUnElemLista(T &)"
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\Grafo.h(77,24):
+              vea la primera referencia a “Tripla<T>::SacarUnElemLista” en “Grafo<T>::SacarAdyacente”
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\ProyectoFinal\MinCut.h(40,23):
+              vea la primera referencia a “Grafo<T>::SacarAdyacente” en “MinCut<std::string>::SacarAletorios”
+          with
+          [
+              T=std::string
+          ]
+              D:\Estructura de Datos\ProyectoFinal\test\test\testMinCut.cpp(15,26):
+              vea la primera referencia a “MinCut<std::string>::SacarAletorios” en “MinCutTest_SacarAletoriosTest_Test::TestBody”
   
   test.vcxproj -> D:\Estructura de Datos\ProyectoFinal\test\x64\Debug\test.exe

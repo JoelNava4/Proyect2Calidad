@@ -7,5 +7,44 @@
     <TestDuration Test="TriplaTest.PrimerElemListaTest" Duration="1" />
     <TestDuration Test="TriplaTest.EliminarUnElementoListaTest" Duration="1" />
     <TestDuration Test="TriplaTest.SacarUnElemListaTest" Duration="1" />
+    <TestDuration Test="GrafoTest.ConstructorDestructorTest" Duration="1" />
+    <TestDuration Test="GrafoTest.FuncionHashSimpleTest" Duration="1" />
+    <TestDuration Test="GrafoTest.InsertarNuevoNodoTest" Duration="1" />
+    <TestDuration Test="GrafoTest.InsertarAdyacenteExistenteTest" Duration="1" />
+    <TestDuration Test="GrafoTest.BuscarNodoExistenteTest" Duration="1" />
+    <TestDuration Test="GrafoTest.BuscarNodoInexistenteTest" Duration="1" />
+    <TestDuration Test="GrafoTest.EliminarNodoExistenteTest" Duration="1" />
+    <TestDuration Test="GrafoTest.EliminarNodoInexistenteTest" Duration="1" />
+    <TestDuration Test="GrafoTest.SacarAdyacenteTest" Duration="1" />
+    <TestDuration Test="GrafoTest.MostrarTest" Duration="2" />
+    <TestDuration Test="Lista8Test.InsertarPrincipio_ListaVacia" Duration="1" />
+    <TestDuration Test="Lista8Test.InsertarPrincipio_ListaNoVacia" Duration="1" />
+    <TestDuration Test="Lista8Test.InsertarFinal_ListaVacia" Duration="1" />
+    <TestDuration Test="Lista8Test.InsertarFinal_ListaNoVacia" Duration="1" />
+    <TestDuration Test="Lista8Test.MostrarLista" Duration="2" />
+    <TestDuration Test="Lista8Test.EliminarPrincipio_ListaUnElemento" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarPrincipio_ListaConDos" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarFinal_ListaUnElemento" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarFinal_ListaConDos" Duration="1" />
+    <TestDuration Test="Lista8Test.BuscarElementoExistente" Duration="1" />
+    <TestDuration Test="Lista8Test.BuscarElementoNoExistente" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarElementoDado_AlInicio" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarElementoDado_AlFinal" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarElementoDado_Intermedio" Duration="1" />
+    <TestDuration Test="Lista8Test.EliminarElementoDado_NoExistente" Duration="1" />
+    <TestDuration Test="MinCutTest.InsertarTest" Duration="1" />
+    <TestDuration Test="MinCutTest.SacarAletoriosTest" Duration="1" />
+    <TestDuration Test="MinCutTest.ContraerTest" Duration="1" />
+    <TestDuration Test="MinCutTest.CorteMinimoTest" Duration="1" />
+    <TestDuration Test="MinCutTest.ReiniciarGrafoyListaTestOnly" Duration="1" />
+    <TestDuration Test="MinCutTest.MostrarCiudadesTest" Duration="1" />
+    <TestDuration Test="MinCutTest.MostrarGrafoTest" Duration="1" />
+    <TestDuration Test="TriplaTest.SetAndGetSigAnt" Duration="1" />
+    <TestDuration Test="TriplaTest.EliminarUltimoElementoListaTest" Duration="1" />
+    <TestDuration Test="TriplaTest.EliminarElementoMultiplesOcurrencias" Duration="1" />
+    <TestDuration Test="TriplaTest.EliminarCaminateTest" Duration="1" />
+    <TestDuration Test="TriplaTest.MostrarListaTest" Duration="2" />
+    <TestDuration Test="TriplaTest.SacarUnElemListaUnicaEntrada" Duration="1" />
+    <TestDuration Test="TriplaTest.SacarUnElemListaConMultiples" Duration="1" />
   </TestDurations>
 </GtaTestDurations>
