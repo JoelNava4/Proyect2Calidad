@@ -3,8 +3,8 @@
 
 TEST(GrafoTest, ConstructorDestructorTest) {
     Grafo<string>* g = new Grafo<string>();
-    delete g; 
-    SUCCEED(); 
+    delete g;
+    SUCCEED();
 }
 
 TEST(GrafoTest, FuncionHashSimpleTest) {
@@ -82,4 +82,57 @@ TEST(GrafoTest, MostrarTest) {
     g.Mostrar();
     string output = testing::internal::GetCapturedStdout();
     EXPECT_TRUE(output.find("A") != string::npos || output.find("C") != string::npos);
+}
+TEST(GrafoTest, FuncionHashCadenaVacia) {
+    Grafo<string> g;
+    int h = g.funcionHash("");
+    EXPECT_GE(h, 0);
+    EXPECT_LT(h, 409);
+}
+TEST(GrafoTest, InsertarNodoYaExistenteAgregaAdyacente) {
+    Grafo<string> g;
+    vector<string> ciudades;
+    g.insertar("Ciudad1", "Ciudad2", ciudades);
+    g.insertar("Ciudad1", "Ciudad3", ciudades);
+    Tripla<string>* nodo = g.buscar("Ciudad1");
+    ASSERT_NE(nodo, nullptr);
+    vector<string> lista = nodo->getLista();
+    EXPECT_EQ(lista.size(), 2);
+    EXPECT_EQ(lista[0], "Ciudad2");
+    EXPECT_EQ(lista[1], "Ciudad3");
+}
+TEST(GrafoTest, SacarAdyacenteSinAdyacentes) {
+    Grafo<string> g;
+    vector<string> ciudades;
+    g.insertar("NodoSolo", "", ciudades); // adyacente vacío
+    string adyacente;
+    g.SacarAdyacente("NodoSolo", adyacente);
+    EXPECT_EQ(adyacente, "");
+}
+TEST(GrafoTest, MostrarGrafoVacio) {
+    Grafo<string> g;
+    testing::internal::CaptureStdout();
+    g.Mostrar();
+    string salida = testing::internal::GetCapturedStdout();
+    EXPECT_TRUE(salida.empty());
+}
+TEST(GrafoTest, MostrarGrafoParcialmenteLleno) {
+    Grafo<string> g;
+    vector<string> ciudades;
+    g.insertar("Uno", "Dos", ciudades);
+    g.insertar("Tres", "Cuatro", ciudades);
+    testing::internal::CaptureStdout();
+    g.Mostrar();
+    string salida = testing::internal::GetCapturedStdout();
+    EXPECT_TRUE(salida.find("Uno") != string::npos);
+    EXPECT_TRUE(salida.find("Tres") != string::npos);
+}
+TEST(GrafoTest, DestructorConNodos) {
+    Grafo<string>* g = new Grafo<string>();
+    vector<string> ciudades;
+    for (int i = 0; i < 5; ++i) {
+        g->insertar("Nodo" + to_string(i), "Ady" + to_string(i), ciudades);
+    }
+    delete g;
+    SUCCEED(); // Si llega aquí, el destructor no causó errores
 }
