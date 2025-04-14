@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\test\\testsTripla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test\\testsTripla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\Tripla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Tripla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "testsTripla.cpp",
-              "DocumentMoniker": "D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\test\\testsTripla.cpp",
-              "RelativeDocumentMoniker": "test\\testsTripla.cpp",
-              "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\test\\testsTripla.cpp*",
-              "RelativeToolTip": "test\\testsTripla.cpp*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-09T20:24:47.048Z",
+              "Title": "Tripla.h",
+              "DocumentMoniker": "D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\Tripla.h",
+              "RelativeDocumentMoniker": "Tripla.h",
+              "ToolTip": "D:\\Estructura de Datos\\ProyectoFinal\\ProyectoFinal\\Tripla.h",
+              "RelativeToolTip": "Tripla.h",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-14T20:11:10.678Z",
               "EditorCaption": ""
             }
           ]
